@@ -1,0 +1,16 @@
+<div class="container">
+  <h2>All our flats (<%= @flats.count %>) </h2>
+
+ <% @flats.each do |flat| %>
+
+ <div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"><%= flat.name %></h5>
+    <h6 class="card-subtitle mb-2 text-muted"><%= flat.address %></h6>
+    <p class="card-text"><%= flat.price_per_night %></p>
+    <%# <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a> %>
+  </div>
+</div>
+<% end %>
+</div>
